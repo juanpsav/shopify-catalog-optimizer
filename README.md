@@ -30,9 +30,91 @@ The control mutation (Class F) removes all fitment text from title and descripti
 | E | productType | Set Shopify standard taxonomy category |
 | F | metafields | CONTROL: fitment only in metafields, removed from text |
 
+## Shopify Catalog MCP
+
+The experiment runs against the [Shopify Global Catalog](https://shopify.dev/docs/agents/catalog), the same index that powers AI shopping agents across ChatGPT, Gemini, and the Shop assistant. It exposes three MCP tools over a single HTTP endpoint.
+
+**Endpoint**
+
+```
+Global:     https://catalog.shopify.com/api/ucp/mcp
+Storefront: https://{storeDomain}/api/ucp/mcp
+```
+
+Requests include an agent profile URL in `meta.ucp-agent.profile` for capability negotiation. Keyless access works at low volume; authenticated keys (via Dev Dashboard) unlock higher rate limits.
+
+**search_catalog**
+
+Finds products using natural language, images, or product IDs.
+
+```json
+{
+  "catalog.query": "bed organizer for 2023 Toyota Tacoma 3rd gen",
+  "catalog.context": {
+    "country": "US",
+    "language": "en",
+    "currency": "USD",
+    "intent": "purchase"
+  },
+  "catalog.filters": {
+    "available_for_sale": true,
+    "ships_to_country": "US"
+  },
+  "catalog.pagination.limit": 10
+}
+```
+
+Results are clustered by Universal Product ID (UPID) across all merchants. This is the tool used in every eval cycle to measure where each product ranks for a given query.
+
+**lookup_catalog**
+
+Retrieves up to 50 products by GID. Used by `watch_index.py` to verify a specific product's indexed field values after a mutation.
+
+```json
+{
+  "catalog.ids": ["gid://shopify/Product/123456789"],
+  "catalog.context": { "country": "US" }
+}
+```
+
+**get_product**
+
+Returns full product detail with variant availability and checkout links. Accepts option selections with relaxed matching so agents can handle partial selections gracefully.
+
+```json
+{
+  "catalog.id": "gid://shopify/Product/123456789",
+  "catalog.selected": [{ "name": "Size", "label": "6 ft" }],
+  "catalog.preferences": ["Size", "Color"]
+}
+```
+
+**Product schema**
+
+```
+id             UPID (gid://shopify/p/... format, stable across merchants)
+title          Product title
+description    HTML or plain text
+url            Product page URL
+media[]        Images with alt text (must render real-time, not cached)
+price_range    { min, max, currency_code } in minor units
+variants[]     Per-variant: price, availability, sku, selected_options, checkout_url
+options[]      { name, values[] } with available/exists signals per value
+availability   { in_stock, running_low }
+seller         { shop_name, shop_id, shop_domain, shop_url }
+tags[]         Merchant-defined tags
+condition      new | secondhand
+rating         { value, scale_max, count }
+taxonomy[]     { id, name, type: "shopify_standard" | "merchant" }
+```
+
+Key nuance for this experiment: several fields (notably taxonomy and some availability signals) are **AI-inferred** by Shopify from the product's text content. This is why fitment data in structured metafields does not reliably influence ranking. The inference pipeline reads title and description, not custom namespaces.
+
 ## Stack
 
 Python 3.9+. httpx for the Catalog MCP and Admin GraphQL. Anthropic SDK for mutation proposals and prompt generation. YAML prompt sets. File-based state. System cron for the index watcher.
+
+The Catalog MCP client speaks the [MCP Streamable HTTP transport](https://spec.modelcontextprotocol.io) directly over httpx. No SDK wrapper needed.
 
 No external database. Each component is a standalone script.
 
