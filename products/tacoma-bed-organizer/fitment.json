@@ -1,0 +1,22 @@
+{
+  "product_id": "gid://shopify/Product/PLACEHOLDER_TACOMA_BED",
+  "vehicles": [
+    {
+      "year_start": 2016,
+      "year_end": 2023,
+      "make": "Toyota",
+      "model": "Tacoma",
+      "trim": ["SR", "SR5", "TRD Sport", "TRD Off-Road", "TRD Pro", "Limited", "Trail Edition"],
+      "generation": "3rd Gen",
+      "bed_length_inches": [60, 73],
+      "notes": "Fits short (5') and long (6') bed. Double-cab and Access-cab."
+    }
+  ],
+  "fitment_notes": "Compatible with all 3rd-generation Toyota Tacoma (2016–2023). Not compatible with 2nd gen (2005–2015).",
+  "target_queries": [
+    "bed organizer for 2022 Toyota Tacoma 3rd gen",
+    "Tacoma TRD Pro bed drawer system",
+    "aluminum truck bed organizer Tacoma",
+    "3rd gen Tacoma accessories storage"
+  ]
+}

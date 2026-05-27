@@ -1,0 +1,20 @@
+{
+  "product_id": "gid://shopify/Product/PLACEHOLDER_TUNDRA_COVER",
+  "title": "FlexShield Low-Profile Roll-Up Tonneau Cover",
+  "description_html": "<p>Protect your cargo from the elements with the FlexShield low-profile roll-up tonneau cover. Constructed from heavy-duty 24oz vinyl with an aluminum frame, it rolls up in seconds and sits nearly flush with the bedrail for a clean factory look.</p><p>No-drill installation with clamp-on mounting system. Access cab or crew cab fitment. Available for 5.5-foot and 6.5-foot beds. Includes integrated latch system and drain tubes.</p>",
+  "tags": ["tonneau-cover", "truck-bed-cover", "truck-accessories", "tundra-accessories"],
+  "product_type": "Tonneau Covers",
+  "vendor": "FlexShield",
+  "status": "ACTIVE",
+  "handle": "flexshield-low-profile-roll-up-tonneau-cover",
+  "metafields": [
+    {
+      "namespace": "fitment",
+      "key": "compatible_vehicles",
+      "type": "json",
+      "value": "{\"vehicles\":[{\"make\":\"Toyota\",\"model\":\"Tundra\",\"year_start\":2022,\"year_end\":2025}]}"
+    }
+  ],
+  "taxonomy_category": null,
+  "last_updated": "2025-01-01T00:00:00Z"
+}

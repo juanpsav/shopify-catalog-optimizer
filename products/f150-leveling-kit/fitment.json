@@ -1,0 +1,32 @@
+{
+  "product_id": "gid://shopify/Product/PLACEHOLDER_F150_LIFT",
+  "vehicles": [
+    {
+      "year_start": 2015,
+      "year_end": 2020,
+      "make": "Ford",
+      "model": "F-150",
+      "trim": ["XL", "XLT", "Lariat", "King Ranch", "Platinum", "Limited", "Raptor"],
+      "generation": "13th Gen (P552)",
+      "drivetrain": ["4WD", "2WD"],
+      "notes": "2015–2020, all cab/bed configurations"
+    },
+    {
+      "year_start": 2021,
+      "year_end": 2024,
+      "make": "Ford",
+      "model": "F-150",
+      "trim": ["XL", "XLT", "Lariat", "King Ranch", "Platinum", "Limited", "Raptor", "Tremor"],
+      "generation": "14th Gen (P702)",
+      "drivetrain": ["4WD", "2WD"],
+      "notes": "2021–2024 14th gen. NOTE: F-150 Lightning (BEV) NOT compatible."
+    }
+  ],
+  "fitment_notes": "Gas and hybrid F-150 only. F-150 Lightning (2022+) is NOT compatible — different front suspension geometry.",
+  "target_queries": [
+    "lift kit for 2022 F-150",
+    "Ford F-150 leveling kit 3 inch",
+    "F-150 14th gen suspension lift",
+    "F-150 Raptor leveling kit"
+  ]
+}

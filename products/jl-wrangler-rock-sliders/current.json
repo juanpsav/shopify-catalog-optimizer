@@ -1,0 +1,20 @@
+{
+  "product_id": "gid://shopify/Product/PLACEHOLDER_JL_SLIDERS",
+  "title": "IronClad Heavy Duty Rock Slider Side Steps",
+  "description_html": "<p>Protect your rocker panels on the toughest trails with IronClad heavy-duty rock sliders. Fabricated from 3/16-inch DOM steel tube, these sliders double as rock-solid step rails for easy cab entry. Powder-coated black for long-lasting corrosion resistance.</p><p>Designed for serious off-road use. Features integrated step pads, 3,000 lb rated, and bolt-on installation. No welding required.</p>",
+  "tags": ["rock-sliders", "side-steps", "jeep-accessories", "off-road"],
+  "product_type": "Skid Plates & Protection",
+  "vendor": "IronClad",
+  "status": "ACTIVE",
+  "handle": "ironclad-heavy-duty-rock-sliders",
+  "metafields": [
+    {
+      "namespace": "fitment",
+      "key": "compatible_vehicles",
+      "type": "json",
+      "value": "{\"vehicles\":[{\"make\":\"Jeep\",\"model\":\"Wrangler\",\"year_start\":2018,\"year_end\":2024,\"submodel\":[\"JL\",\"JLU\"]}]}"
+    }
+  ],
+  "taxonomy_category": null,
+  "last_updated": "2025-01-01T00:00:00Z"
+}

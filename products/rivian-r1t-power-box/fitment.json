@@ -1,0 +1,22 @@
+{
+  "product_id": "gid://shopify/Product/PLACEHOLDER_RIVIAN_PWR",
+  "vehicles": [
+    {
+      "year_start": 2022,
+      "year_end": 2025,
+      "make": "Rivian",
+      "model": "R1T",
+      "trim": ["Adventure", "Explore", "Launch Edition", "Max Pack", "Standard Pack"],
+      "generation": "R1T Gen 1 & 1.5",
+      "bed_rail_system": "Rivian Gear Tunnel + Camp Kitchen rail",
+      "notes": "Attaches to Rivian R1T bed rail system. Uses built-in 120V power outlet (1500W). Also compatible with aftermarket rail systems."
+    }
+  ],
+  "fitment_notes": "Designed specifically for Rivian R1T bed rail ecosystem. Leverages native 120V outlet in gear tunnel. Compatible with 2022–2025 model years.",
+  "target_queries": [
+    "weatherproof power box for Rivian R1T",
+    "Rivian R1T accessories power",
+    "R1T camp power distribution",
+    "Rivian truck bed accessories electrical"
+  ]
+}

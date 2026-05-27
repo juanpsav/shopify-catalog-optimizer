@@ -1,0 +1,20 @@
+{
+  "product_id": "gid://shopify/Product/PLACEHOLDER_RIVIAN_PWR",
+  "title": "TrailPower Weatherproof Power Distribution Box",
+  "description_html": "<p>Keep your electronics powered on any adventure with the TrailPower weatherproof power distribution box. Mounts directly to your truck bed rail system with no drilling required. Features 4x 120V AC outlets (1800W inverter), 2x USB-A, 2x USB-C (100W PD), and a 12V cigarette socket.</p><p>IP67 waterproof housing. 30-second install and removal. Works with any 12V truck power source.</p>",
+  "tags": ["power-box", "truck-accessories", "outdoor-power", "ev-accessories"],
+  "product_type": "Electrical Accessories",
+  "vendor": "TrailPower",
+  "status": "ACTIVE",
+  "handle": "trailpower-weatherproof-power-distribution-box",
+  "metafields": [
+    {
+      "namespace": "fitment",
+      "key": "compatible_vehicles",
+      "type": "json",
+      "value": "{\"vehicles\":[{\"make\":\"Rivian\",\"model\":\"R1T\",\"year_start\":2022,\"year_end\":2025}]}"
+    }
+  ],
+  "taxonomy_category": null,
+  "last_updated": "2025-01-01T00:00:00Z"
+}

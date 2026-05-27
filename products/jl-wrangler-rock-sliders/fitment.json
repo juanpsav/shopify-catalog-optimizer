@@ -1,0 +1,34 @@
+{
+  "product_id": "gid://shopify/Product/PLACEHOLDER_JL_SLIDERS",
+  "vehicles": [
+    {
+      "year_start": 2018,
+      "year_end": 2024,
+      "make": "Jeep",
+      "model": "Wrangler",
+      "trim": ["Sport", "Sport S", "Sahara", "Rubicon", "Willys", "Mojave", "392"],
+      "submodel": "JL",
+      "body": "2-door",
+      "generation": "JL (4th gen)",
+      "notes": "2-door JL only. See separate listing for 4-door JLU."
+    },
+    {
+      "year_start": 2018,
+      "year_end": 2024,
+      "make": "Jeep",
+      "model": "Wrangler",
+      "trim": ["Sport", "Sport S", "Sahara", "Rubicon", "Willys", "Mojave", "392"],
+      "submodel": "JLU",
+      "body": "4-door (Unlimited)",
+      "generation": "JL (4th gen)",
+      "notes": "4-door JLU (Unlimited) — longer rocker section, different slider length."
+    }
+  ],
+  "fitment_notes": "JL/JLU only. NOT compatible with JK (2007–2018). Two SKUs: 2-door JL and 4-door JLU.",
+  "target_queries": [
+    "rock sliders for Jeep Wrangler JL",
+    "Jeep JL side step rock protection",
+    "2024 Wrangler JLU rock sliders",
+    "Jeep Wrangler Rubicon rock sliders bolt on"
+  ]
+}

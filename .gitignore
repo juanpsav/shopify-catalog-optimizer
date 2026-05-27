@@ -1,0 +1,24 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+
+# Credentials
+.env
+
+# Eval output (large, gitignore but not evals/.gitkeep)
+evals/*
+!evals/.gitkeep
+
+# Logs
+logs/
+
+# Claude Code local settings
+.claude/
+
+# OS
+.DS_Store

@@ -1,0 +1,20 @@
+{
+  "product_id": "gid://shopify/Product/PLACEHOLDER_TACOMA_BED",
+  "title": "ProSlide Aluminum Bed Organizer Drawer System",
+  "description_html": "<p>Keep your truck bed organized with the ProSlide heavy-duty aluminum drawer system. Built from aircraft-grade aluminum, this bed organizer slides smoothly on precision-machined rails and locks securely to prevent gear from shifting on the trail or job site.</p><p>Holds up to 400 lbs. Weatherproof seal. Tool-free installation. Available in 5-foot and 6-foot bed configurations.</p>",
+  "tags": ["truck-bed-organizer", "aluminum-drawer", "truck-accessories", "storage"],
+  "product_type": "Truck Accessories",
+  "vendor": "ProSlide",
+  "status": "ACTIVE",
+  "handle": "proslide-aluminum-bed-organizer",
+  "metafields": [
+    {
+      "namespace": "fitment",
+      "key": "compatible_vehicles",
+      "type": "json",
+      "value": "{\"vehicles\":[{\"make\":\"Toyota\",\"model\":\"Tacoma\",\"year_start\":2016,\"year_end\":2023}]}"
+    }
+  ],
+  "taxonomy_category": null,
+  "last_updated": "2025-01-01T00:00:00Z"
+}

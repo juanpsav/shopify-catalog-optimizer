@@ -1,0 +1,20 @@
+{
+  "product_id": "gid://shopify/Product/PLACEHOLDER_F150_LIFT",
+  "title": "ReadyRIDE 3-Inch Front Leveling Kit",
+  "description_html": "<p>Eliminate the factory rake and level your truck with the ReadyRIDE 3-inch front leveling kit. CNC-machined from billet 6061-T6 aluminum, these strut spacers install in under 2 hours with basic hand tools — no alignment required for most builds.</p><p>Gains 1–2 inches of additional front clearance. Allows fitment of up to 33-inch tires. Retains factory ride quality and full suspension travel. Includes all hardware and lifetime warranty.</p>",
+  "tags": ["leveling-kit", "lift-kit", "truck-suspension", "f150-accessories"],
+  "product_type": "Suspension",
+  "vendor": "ReadyRIDE",
+  "status": "ACTIVE",
+  "handle": "readyride-3-inch-front-leveling-kit",
+  "metafields": [
+    {
+      "namespace": "fitment",
+      "key": "compatible_vehicles",
+      "type": "json",
+      "value": "{\"vehicles\":[{\"make\":\"Ford\",\"model\":\"F-150\",\"year_start\":2015,\"year_end\":2024}]}"
+    }
+  ],
+  "taxonomy_category": null,
+  "last_updated": "2025-01-01T00:00:00Z"
+}
