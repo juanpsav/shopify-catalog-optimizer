@@ -108,7 +108,7 @@ rating         { value, scale_max, count }
 taxonomy[]     { id, name, type: "shopify_standard" | "merchant" }
 ```
 
-Key nuance for this experiment: several fields (notably taxonomy and some availability signals) are **AI-inferred** by Shopify from the product's text content. This is why fitment data in structured metafields does not reliably influence ranking. The inference pipeline reads title and description, not custom namespaces.
+Key nuance: several fields (notably taxonomy and some availability signals) are **AI-inferred** by Shopify from the product's text content. Shopify's guidance points merchants toward titles, descriptions, and standard taxonomy — but does not document how custom metafields are weighted, if at all. Class F (metafield-only) is the control that tests this directly.
 
 ## Stack
 
